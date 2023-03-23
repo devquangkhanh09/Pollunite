@@ -24,19 +24,19 @@ const Photos = [
     url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
+    url: "https://img.freepik.com/free-vector/protecting-environment-concept-illustration_114360-11985.jpg?w=2000",
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
+    url: "https://www.mohitecommerce.com/news/wp-content/uploads/2022/12/environment-clean-1200x720.jpg",
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
+    url: "https://img.freepik.com/free-vector/ecology-pollution-cleaning-composition-with-urban-scenery-cityscape-group-adults-children-gathering-trash-vector-illustration_1284-72974.jpg",
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
+    url: "https://previews.123rf.com/images/majeczka/majeczka1106/majeczka110600015/9731741-natural-clean-environment.jpg",
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923__480.jpg",
+    url: "https://static6.depositphotos.com/1004999/574/i/600/depositphotos_5743212-stock-photo-green-environment.jpg",
   },
 ];
 
