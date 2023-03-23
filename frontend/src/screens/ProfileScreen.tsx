@@ -15,6 +15,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { PhotoGrid } from "react-native-photo-grid-frame";
 import { LogBox } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Ignore log notification by message
 LogBox.ignoreLogs(["Warning: ..."]);
@@ -62,9 +63,9 @@ const ProfileScreen = (): JSX.Element => {
     });
 
     if (!result.canceled) {
-      const blob = await toBlob(result.assets![0]?.uri);
-
-      updateProfileImage(currentUser?.uid, blob);
+      const imagePath = result.assets![0]?.uri;
+      const imageUrl = await updateProfileImage(currentUser?.uid, imagePath);
+      await AsyncStorage.setItem('avatarUrl', imageUrl);
     }
   };
 

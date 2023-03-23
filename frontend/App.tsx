@@ -23,7 +23,7 @@ export default function App() {
               const userData = userSnapshot.data();
               await AsyncStorage.setItem('uid', _user?.uid);
               await AsyncStorage.setItem('name', userData?.name);
-              await AsyncStorage.setItem('avatarUrl', userData?.imageUrl);
+              await AsyncStorage.setItem('avatarUrl', userData?.imageUrl? userData?.imageUrl:"");
               setUser(_user);
             } else setUser(null);
         })

@@ -123,7 +123,8 @@ const getResolve = async (keys: any) => {
     return res;
 }
 
-const updateProfileImage = async (uid: any, image: any) => {
+const updateProfileImage = async (uid: any, imagePath: any) => {
+    const image = await toBlob(imagePath);
     const imageUrl = await uploadProfileImage(uid, image);
     const userRef = doc(db, `users/${uid}`);
     await updateDoc(userRef, {
