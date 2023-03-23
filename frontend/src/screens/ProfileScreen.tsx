@@ -7,13 +7,17 @@ import {
 } from "firebase/firestore";
 import { auth } from "../services/firebaseAuth";
 import { View, Pressable, ScrollView } from "react-native";
-import { Text, TextInput, Avatar } from "@react-native-material/core";
+import { Text, Avatar } from "@react-native-material/core";
 import * as ImagePicker from "expo-image-picker";
 import { updateProfileImage } from "../services/firebaseFirestore";
 import { toBlob } from "../services/imageService";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { PhotoGrid } from "react-native-photo-grid-frame";
+import { LogBox } from "react-native";
+
+// Ignore log notification by message
+LogBox.ignoreLogs(["Warning: ..."]);
 
 const Photos = [
   {
@@ -100,20 +104,6 @@ const ProfileScreen = (): JSX.Element => {
         </View>
       </View>
       <View className="mt-7 flex-row justify-between mx-3">
-        {/* <TextInput
-          variant="standard"
-          label="Email"
-          style={{ width: "100%" }}
-          value={profile?.email}
-          editable={false}
-        />
-        <TextInput
-          variant="standard"
-          label="Name"
-          style={{ width: "100%" }}
-          value={profile?.name}
-          editable={false}
-        /> */}
         <View className="flex-col items-center space-y-2">
           <Text style={{ fontSize: 18, fontWeight: "700", color: "#ff005c" }}>
             1063

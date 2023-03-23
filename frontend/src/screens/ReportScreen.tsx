@@ -9,10 +9,7 @@ import {
 import React, { useState, useEffect } from "react";
 import CustomButton from "../components/CustomButton";
 import InputField from "../components/InputField";
-//import AsyncStorage from "@react-native-async-storage/async-storage";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-/* import axios from "axios";
-import { BASE_URL } from "../config/config"; */
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { MultiSelect } from "react-native-element-dropdown";
 import * as ImagePicker from "expo-image-picker";
@@ -62,7 +59,6 @@ const ReportScreen = () => {
   }, [pickedImagePath]);
 
   const handleSubmit = async () => {
-    
     const avatarUrl = await AsyncStorage.getItem('avatarUrl');
     const uid = await AsyncStorage.getItem('uid');
     const name = await AsyncStorage.getItem('name');

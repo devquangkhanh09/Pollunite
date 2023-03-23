@@ -3,7 +3,6 @@ import React, {useLayoutEffect} from "react";
 import { useNavigation } from "@react-navigation/native";
 import EventList from "../components/EventList";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const EventScreen = () => {
   const navigation: any = useNavigation();

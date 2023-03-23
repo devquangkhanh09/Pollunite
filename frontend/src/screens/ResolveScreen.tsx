@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {Text, View, Image, Pressable, FlatList, ListRenderItemInfo} from 'react-native'
+import { View, Pressable, FlatList, ListRenderItemInfo} from 'react-native'
 import Header from '../components/Header';
 import ResolvePost from '../components/ResolvePost';
 import { getResolve } from '../services/firebaseFirestore';

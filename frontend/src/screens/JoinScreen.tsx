@@ -11,10 +11,7 @@ import BackArrowIcon from "../../assets/svg/back_arrow.svg";
 import React, { useState, useEffect } from "react";
 import CustomButton from "../components/CustomButton";
 import InputField from "../components/InputField";
-//import AsyncStorage from "@react-native-async-storage/async-storage";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-/* import axios from "axios";
-import { BASE_URL } from "../config/config"; */
 import * as ImagePicker from "expo-image-picker";
 import * as Location from "expo-location";
 import AsyncStorage from "@react-native-async-storage/async-storage";

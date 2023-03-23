@@ -2,8 +2,6 @@ import { useState } from 'react'
 import {Text, View, Pressable} from 'react-native'
 import TextInputComponent from '../components/TextInputComponent';
 import PassWordComponent from '../components/PasswordComponent';
-import GoogleIcon from '../../assets/svg/google.svg'
-import FacebookIcon from '../../assets/svg/facebook.svg'
 import {signUp} from '../services/firebaseAuth';
 
 const SignUpScreen = ({navigation}): JSX.Element => {

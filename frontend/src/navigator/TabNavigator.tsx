@@ -3,7 +3,6 @@ import {
   MaterialBottomTabNavigationOptions,
 } from "@react-navigation/material-bottom-tabs";
 import EventScreen from "../screens/EventScreen";
-import HomeScreen from "../screens/HomeScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import ReportScreen from "../screens/ReportScreen";
 import MapScreen from "../screens/Map";

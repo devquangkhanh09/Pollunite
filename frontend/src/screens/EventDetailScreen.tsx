@@ -5,11 +5,9 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
-  Button,
 } from "react-native";
 import { PhotoGrid } from "react-native-photo-grid-frame";
-import React, { useEffect, useState, useLayoutEffect } from "react";
-import NumericInput from "react-native-numeric-input";
+import React, { useState, useLayoutEffect } from "react";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import CustomButton from "../components/CustomButton";
@@ -20,17 +18,17 @@ const radioButtonsData = [
   {
     id: "1", // acts as primary key, should be unique and non-empty string
     label: "Option 1 - 10% discount",
-    value: 100,
+    value: "100",
   },
   {
     id: "2", // acts as primary key, should be unique and non-empty string
     label: "Option 2 - 20% discount",
-    value: 200,
+    value: "200",
   },
   {
     id: "3", // acts as primary key, should be unique and non-empty string
     label: "Option 3 - 30% discount",
-    value: 300,
+    value: "300",
   },
 ];
 
@@ -125,7 +123,7 @@ const EventDetailScreen = ({ navigation, route }) => {
           <View className="items-center mt-5 flex-col space-y-3 flex-1">
             <Text
               className="text-bold font-lg"
-              style={{ fontSize: 20, fontWeight: 700 }}
+              style={{ fontSize: 20, fontWeight: "700" }}
             >
               Donate for us !
             </Text>

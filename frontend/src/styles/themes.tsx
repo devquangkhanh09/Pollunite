@@ -1,6 +1,4 @@
-import { DefaultTheme } from '@react-navigation/native'
 import color from './color'
-import text from './text'
 
 const PiHomeLightTheme = {
     dark: false,

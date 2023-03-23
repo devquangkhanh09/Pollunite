@@ -30,7 +30,7 @@
     "firebase": "^9.18.0",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
-    "react-native": "0.71.3",
+    "react-native": "0.71.4",
     "react-native-element-dropdown": "^2.8.1",
     "react-native-element-textinput": "^2.2.0",
     "react-native-geocoder": "^0.5.0",
@@ -51,7 +51,7 @@
     "react-native-vector-icons": "^9.2.0",
     "serialize-javascript": "^6.0.1",
     "tailwindcss": "^3.2.7",
-    "expo-dev-client": "~2.1.5"
+    "expo-dev-client": "~2.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

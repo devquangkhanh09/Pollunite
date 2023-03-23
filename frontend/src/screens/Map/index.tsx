@@ -1,21 +1,15 @@
 import * as React from "react";
-import { View, Text, Button, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import MapView from "react-native-map-clustering";
 import { Marker } from "react-native-maps";
 import { useEffect, useRef, useState } from "react";
 import * as Location from "expo-location";
 import {
   collection,
-  doc,
-  DocumentData,
   getFirestore,
-  limit,
   onSnapshot,
   query,
-  QuerySnapshot,
 } from "firebase/firestore";
-import { auth } from "../../services/firebaseAuth";
-import { LocationGeofencingEventType } from "expo-location";
 import { returnMarkerStyle } from "./helper";
 import { markerStyles, styles } from "./styles";
 import Modal from "react-native-modal";
